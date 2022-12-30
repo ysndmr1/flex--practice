@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+header a {
+  color: white;
+}
+
+.nav-left a {
+  margin-left: 10px;
+}
+
+.nav-right a {
+  margin-right: 10px;
+}
+
+.nav-left {
+  flex-basis: 28%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+}
+.nav-right {
+  display: flex;
+  justify-content: end;
+  flex-basis: 39%;
+  position: relative;
+}
+
+.nav-right section {
+  gap: 10px;
+}
+
+span.basket {
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 1rem;
+  position: absolute;
+  top: -2px;
+  right: -15px;
+}
+main {
+  padding: 1rem;
+  text-align: center;
+}
+footer {
+  margin-top: auto;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+  display: flex;
+
+  gap: 3rem;
+  padding: 2rem;
+}
+footer a {
+  color: white;
+}
+
+footer span {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.category,
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 20%;
+}
+
+.about,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 30%;
+}
+
+.fa-basket-shopping::after {
+  content: attr(value);
+  background-color: red;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 5px;
+  position: relative;
+  left: -5px;
+}
